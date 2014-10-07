@@ -1,0 +1,40 @@
+.goal {
+  @include grid-row;
+  background: white;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .05);
+  padding: rem-calc(20px);
+  position: relative;
+  margin: rem-calc(20px 0 20px 0);
+
+  &.new {
+    padding: 0;
+
+    .input {
+      padding: rem-calc(20px);
+    }
+  }
+
+  h2, h3 {
+    font-weight: 900;
+    margin: 0;
+  }
+
+  h2 {
+    @include grid-column(9, $collapse: true);
+    font-size: rem-calc(20px);
+  }
+
+  h3 {
+    font-size: rem-calc(18px);
+  }
+
+  .stats {
+    @include grid-column(3, $collapse: true);
+    text-align: right;
+  }
+
+  .button {
+    background: $blue;
+    margin: 0;
+  }
+}
