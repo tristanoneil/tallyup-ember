@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import startApp from '../helpers/start-app';
 import stopApp from '../helpers/stop-app';
-import config from '../../config/environments/test';
+import config from '../../config/environment';
 
 var App;
 

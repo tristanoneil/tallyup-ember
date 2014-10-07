@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import config from '../../config/environments/test';
+import config from '../../config/environment';
 
 export default function stopApp(App) {
   stop();
