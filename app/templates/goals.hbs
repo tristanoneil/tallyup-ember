@@ -1,12 +1,17 @@
 {{outlet}}
 
 <div class="goals">
-  {{#each model}}
+  {{#each itemController="goal"}}
     <div class="goal">
-      <h2>{{name}}</h2>
-      <div class="stats">
-        <h3>{{target}}</h3>
+      <div class="inner">
+        <h2>{{model.name}}</h2>
+        <div class="stats">
+          <h3>{{model.numberOfTalliesForWeek}} of {{model.target}}</h3>
+        </div>
       </div>
+
+      <button {{action "tallyUp"}} class="tally up">Tally Up</button>
+      <button {{action "tallyDown"}} class="tally down">Tally Down</button>
     </div>
   {{/each}}
 </div>

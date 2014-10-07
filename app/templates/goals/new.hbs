@@ -1,8 +1,7 @@
 <div class="goal new">
   <form {{action "save" on="submit"}}>
-    <div class="input">
+    <div class="inner">
       {{input value=newGoal.name class="name" placeholder="Goal name" required="true"}}
-      {{view Ember.Select content=frequencies required="true"}}
       {{input value=newGoal.target class="target" placeholder="Goal target" required="true"}}
     </div>
 
